@@ -1,9 +1,17 @@
 body {
-    padding:0 ; margin: 0 ; background-color: #EFEFEF;
+     background-image: url("http://el-zamalek.com/wp-content/uploads/2016/02/site-background.jpg");
     height: 100%;
 }
-div {
-    
+.items {
+    width: 90%;
+  /*  background: linear-gradient(90deg, #00d4ff , #5050f2, #00d4ff); */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0px 7px 12px 7px;
+    align-items: center;
+    justify-content: center;
 }
 .header {
     display: flex;
@@ -11,9 +19,9 @@ div {
     align-items: center;
     text-align: center;
     /* font:12px white italic Fira Sans, serif; */
-    font: 20px Arial, sans-serif;   
+    font: 20px Arial, sans-serif;
     color:#B21818;
-    background: linear-gradient(90deg, #BC3627,#B7DDFF,#BC3627);
+    background: linear-gradient(90deg, #eeaeca,#B7DDFF,#eeaeca);
 }
 input {
     display: block;
@@ -37,9 +45,9 @@ input {
 }
 .hmike {
     padding: 0;
-    margin: 10px;  
+    margin: 10px;
     font: 40px "fira sans", serif;
-    color: blue;
+    color: black;
     position: relative;
     left: 20px;
 }
@@ -47,7 +55,8 @@ input {
     display: flex;
     flex-direction: row;
     justify-content:center;
-    background: linear-gradient(90deg, #4F3330,#2C3E4F,#4F3330);
+    background: linear-gradient(90deg, #a7c9f2 , #eeaeca, #a7c9f2);
+  /*  background: linear-gradient(90deg, #4F3330,#2C3E4F,#4F3330); */
     color: white;
     padding: 10px;
 
@@ -79,6 +88,7 @@ input {
     width: 100%;
    position: fixed;
     bottom :0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -99,3 +109,30 @@ p{
     h3{
         margin: 0px;
     }
+    .cont3n {
+      display : inline-block;
+      margin: 20px 20px 10px 20px;
+
+    }
+    .flexo {
+      width: 95%;
+      display: flex;
+      align-items: flex-start;
+    }
+    .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+.buttonCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
