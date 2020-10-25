@@ -71,6 +71,11 @@
                 <div class="buttonCont">
                    <button class="button" onclick="videoPlayer(1)">تشغيل</button>
                    <br><div id="video_player1"></div><br>
+                </div><hr>
+                <h4> معرض لوحات المشروع:</h4>
+                <div class="buttonCont">
+                  <button class="button" onclick="galleryViewer(2)">عرض</button>
+                  <br><div id="gallery_viewer2"></div><br>
                 </div>
               </div>
 
@@ -149,11 +154,13 @@
           this.num=num;
           var url
           switch (num) {
-            case 1: url ='<iframe src="https://albumizr.com/a/iW-e" scrolling="no" frameborder="0" allowfullscreen width="800" height="480"></iframe>';
+            // <iframe src="https://albumizr.com/a/iW-e" scrolling="no" frameborder="0" allowfullscreen width="800" height="480"></iframe>
+            case 1: url ='<iframe src="https://albumizr.com/a/3CKb" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe>';
                     name="gallery_viewer1"
               break;
 
-            case 2: url ='';
+            case 2: url ='<iframe src="https://albumizr.com/a/S76o" scrolling="no" frameborder="0" allowfullscreen width="800" height="480"></iframe>';
+                    name="gallery_viewer2"
               break;
 
           }
