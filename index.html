@@ -2,8 +2,9 @@
 <html lang=en>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <title>Eng. Micheal Fawzy</title>
         </head>
     <body>
@@ -26,7 +27,7 @@
         </div>
         <div class="cont">
             <div class="flexo">
-              <img class="cont3n" id="mypic" src="https://i.ibb.co/g7B4Kmp/Eng-Micheal-Fawzy-CV.jpg" alt="Eng-Micheal-Fawzy-CV" >
+              <img class="cont3n" id="mypic" src="https://i.ibb.co/g7B4Kmp/Eng-Micheal-Fawzy-CV.jpg" alt="Eng.MichealFawzy" >
               <div class="cont3n">
                 <h1>Micheal Fawzy</h1>
                 <h2>Civil Engineer</h2>
@@ -52,12 +53,12 @@
                 </p><hr>
                 <h4>Videos of past works: </h4>
                 <div class="buttonCont">
-                  <button class="button" onclick="videoPlayer(2)">Play</button>
+                  <button class="button" id="button2" onclick="videoPlayer(2)"><b>Play</b></button>
                   <br><div id="video_player2"></div><br>
                 </div><hr>
                 <h4>Gallery of past works: </h4>
                 <div class="buttonCont">
-                  <button class="button" onclick="galleryViewer(1)">View</button>
+                  <button class="button" id="button3" onclick="galleryViewer(1)"><b>View</b></button>
                   <br><div id="gallery_viewer1"></div><br>
                 </div>
               </div>
@@ -67,15 +68,15 @@
               Grade: Excellent<br>
               Using WMS & ArcGis to check the safety of Earth elevations against floods & heavy rainfalls. Also Design all the roads, Canals & bridges...etc to maintain the maximum usage of water & minimize the damage to zero if possible.
                 </p><hr>
-                <h4>Project Overview: </h4>
+                <h3>Project Overview: </h3>
                 <br>
                 <div class="buttonCont">
-                   <button class="button" onclick="videoPlayer(1)">Play</button>
+                   <button class="button" id="button1" onclick="videoPlayer(1)"><b>Play</b></button>
                    <br><div id="video_player1"></div><br>
                 </div><hr>
-              <h4>Layouts of Project Drawings: </h4>
+              <h3>Layouts of Project Drawings: </h3>
                   <div class="buttonCont">
-                    <button class="button" onclick="galleryViewer(2)">View</button>
+                    <button class="button" id="button4" onclick="galleryViewer(2)"><b>View</b></button>
                     <br><div id="gallery_viewer2"></div><br>
                   </div>
               </div>
@@ -111,7 +112,7 @@
                   <li> Problem Solving
                   <li> Lead a team </ul>
                   </div>
-                  <div class="items1" ; style="items-align : Center; width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>Contact</Strong></button> </h2> </div>
+                  <div class="items1" style=" width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>Contact</Strong></button> </h2> </div>
                   <div id="contact"></div>
                 </div>
                 <div class="items1" style="width : 45.5%"> <h2><Strong>Military status:</Strong> </h2>
@@ -126,44 +127,8 @@
 
 
               </div>
-<br>
+            <br></div>
         <div class="footer">This page Copyrights &copy; Eng.Micheal Fawzy</div>
-        <script>
-        function contact() {
-
-          document.getElementById("contact").innerHTML="<P><img src='Location.ico' width='30px' height='30px'> Location : <a href='https://goo.gl/maps/C6No6BxxBuE5zt7P8' target='_blank'>Giza</a><br><br><img src='Mobile.ico' width='35px' height='30px'>  Mobile : <a href='tel:+201220452267'>012220452267</a><br><br><img src='Email.ico' width='30px' height='30px'> Email :<a href='mailto:eng.micheal_fawzy@yahoo.com'>eng.micheal_fawzy@yahoo.com</a><br><br> <img src='Linkedin.ico' width='30px' height='30px'> Linkedin : <a href='https://www.linkedin.com/in/micheal-fawzy/' target='_blank'>/micheal-fawzy</a><br></p>";
-        }
-        function videoPlayer(num) {
-          this.num=num;
-          var url
-          switch (num) {
-            case 1: url ='<iframe width="800" height="480" src="https://www.youtube.com/embed/videoseries?list=PLsy3bLFJfVBApxNosrOMysE79RrIatdfG" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                    name="video_player1"
-              break;
-
-            case 2: url ='<iframe width="800" height="480" src="https://www.youtube.com/embed/videoseries?list=PLsy3bLFJfVBAsiSvuEJnio1us3rZPUvMp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-                    name="video_player2"
-              break;
-
-          }
-          document.getElementById(name).innerHTML=url;
-        }
-        function galleryViewer(num) {
-          this.num=num;
-          var url
-          switch (num) {
-            // <iframe src="https://albumizr.com/a/iW-e" scrolling="no" frameborder="0" allowfullscreen width="800" height="480"></iframe>
-            case 1: url ='<iframe src="https://albumizr.com/a/3CKb" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe>';
-                    name="gallery_viewer1"
-              break;
-
-            case 2: url ='<iframe src="https://albumizr.com/a/S76o" scrolling="no" frameborder="0" allowfullscreen width="800" height="480"></iframe>';
-                    name="gallery_viewer2"
-              break;
-
-          }
-          document.getElementById(name).innerHTML=url;
-        }
-        </script>
+        <script src="js/JavaScript.js"></script>
     </body>
 </html>
