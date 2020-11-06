@@ -144,8 +144,6 @@
 	}
 }
 .newbu {
-    position: relative;
-    left: 40%;
     height: 180px;
     margin-bottom: 0px;
 	--bubbleTiming: cubic-bezier(0.5,0.15,0.25,1.75);
