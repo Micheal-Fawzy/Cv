@@ -14,7 +14,7 @@
 	-webkit-tap-highlight-color: transparent;
 }
 .newbu > label {
-	animation: float 4s ease-in-out infinite;
+	animation: float 8s ease-in-out infinite;
 }
 .bubble, .bubble:before, .bubble:after  {
 	transition-duration: 0.2s;
@@ -131,16 +131,16 @@
 /* Animations */
 @keyframes float {
 	from, to {
-		transform: translate(0,3%);
+		transform: translate(0,6%);
 	}
 	25% {
-		transform: translate(-3%,0);
+		transform: translate(-6%,0);
 	}
 	50% {
-		transform: translate(0,-3%);
+		transform: translate(0,-6%);
 	}
 	75% {
-		transform: translate(3%,0);
+		transform: translate(6%,0);
 	}
 }
 .newbu {
