@@ -62,3 +62,43 @@ function galleryViewer(num) {
     }
     document.getElementById(name).innerHTML = url;
 }
+function DarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+     var digits = document.querySelectorAll(".items , .items1");
+    var digit;
+    for (digit of digits) {
+       digit.classList.toggle("dark-item");}
+    document.getElementById("header").classList.toggle("dark-header");
+    document.getElementById("nav").classList.toggle("dark-nav");
+   // document.getElementById("haeder").classList.add("mystyle");
+
+}
+    
+function DarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+     var digits = document.querySelectorAll(".items , .items1");
+    var digit;
+    for (digit of digits) {
+       digit.classList.toggle("dark-item");}
+    document.getElementById("header").classList.toggle("dark-header");
+    document.getElementById("nav").classList.toggle("dark-nav");
+   // document.getElementById("haeder").classList.add("mystyle");
+
+}
+    
+function DarkMode1() {
+    if (document.getElementById("bubble").checked) {
+        DarkMode();
+        document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/Micheal-Fawzy/Cv/main/img/site-background%5B1%5D.jpg')";
+    } else {
+        DarkMode();
+        document.body.style.backgroundImage = "url('https://www.pixelstalk.net/wp-content/uploads/2016/03/Black-wallpaper-HD-dark.jpg')";
+    }
+}
+
+$("body").niceScroll({
+  cursorcolor:"#aa3a3a",
+  cursorwidth:"15px"
+});
