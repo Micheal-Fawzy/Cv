@@ -1,5 +1,5 @@
 body {
-     background-image: url("https://i.ibb.co/DMknBb9/site-background.jpg");
+     background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Black-wallpaper-HD-dark.jpg");
     height: 100%;
     direction: rtl;
 
@@ -22,7 +22,7 @@ body {
     text-align: center;
     /* font:12px white italic Fira Sans, serif; */
     font: 20px Arial, sans-serif;
-    color:#B21818;
+    color: #B21818;
     background: linear-gradient(90deg, #eeaeca,#B7DDFF,#eeaeca);
 }
 input {
@@ -46,10 +46,9 @@ input {
     padding: 10px;
 }
 .hmike {
-    padding: 0;
+    padding: 0 10px 0 0;
     margin: 10px;
     font: 40px "fira sans", serif;
-    color: black;
     position: relative;
     left: 20px;
 }
@@ -163,3 +162,26 @@ p{
   justify-content: center;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+    background-size: cover;
+}
+
+.dark-item {
+    background: radial-gradient(circle, #200f21 0%, #382039 100%);
+    border: 2px solid white;
+}
+
+.dark-header {
+    background: linear-gradient(90deg, #382039,#5a3d5c,#382039);
+    color: azure;
+}
+.dark-nav {
+    background: linear-gradient(90deg, #5a3d5c , #382039, #5a3d5c);
+}
+
+.newbu {
+    position: absolute;
+    left: 100px ;
+}
