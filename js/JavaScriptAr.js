@@ -98,7 +98,3 @@ function DarkMode1() {
     }
 }
 
-$("body").niceScroll({
-  cursorcolor:"#aa3a3a",
-  cursorwidth:"15px"
-});
