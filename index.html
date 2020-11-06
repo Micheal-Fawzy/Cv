@@ -2,13 +2,14 @@
 <html lang=en>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bubble.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <title>Eng. Micheal Fawzy</title>
         </head>
-    <body>
-        <div class="header">
+    <body class="dark-mode">
+        <div id="header" class="header dark-header">
             <div class="half1">
                 <h1 class="hmike"> Eng.Micheal Fawzy</h1>
             </div>
@@ -19,11 +20,12 @@
                 <input type="password" placeholder=" Password"> -->
             </div>
         </div>
-        <div class="nav">
+        <div id="nav" class="nav dark-nav">
         <!--    <a class="header1" href="https://www.google.com/" target="_blank">Google</a>
             <a class="header1" href="https://www.youtube.com" target="_blank">YouTube</a> -->
             <a class="header1" href="https://micheal-fawzy.github.io/Cv/indexAr" >عربي</a>
             <a class="header1" href="#contact" >Contact Me</a>
+            
         </div>
         <div class="cont">
             <div class="flexo">
@@ -34,14 +36,17 @@
                 <h3>Bachelor civil engineering </h3>
                 <h3>Helwan University - Mattria Branch 2019</h3>
               </div>
+              <div class="cont3n newbu">
+                <label><input id="bubble" class="bubble" type="checkbox" name="dummy" value="off" onchange="DarkMode1()"></label>
+              </div>
             </div>
-            <div class="items"> <h2><Strong>Overview:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>Overview:</Strong> </h2>
               <P>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          Dedicated Civil Engineer that can Achieve Organization aims and goals with low costs & High-Performance Operating, Through efficient Engineering Methods. I can work under pressure, Meeting deadline requirements, Supervision over workers, and Cooperative in teams.
 
                </p>
             </div><br>
-            <div class="items"> <h2><Strong>Work Experience:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>Work Experience:</Strong> </h2>
                   <h3><strong>Maria Arc Group Company</strong></h3>
                   <P>Since Graduation 7/2019 to 3/2020 <br>
                       Site construction engineer <br>
@@ -62,7 +67,7 @@
                   <br><div id="gallery_viewer1"></div><br>
                 </div>
               </div>
-              <div class="items"> <h2><Strong>Graduation Project:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>Graduation Project:</Strong> </h2>
                 <P>
               Hydrology Project<br>
               Grade: Excellent<br>
@@ -83,7 +88,7 @@
 
 
               <div id="cont3">
-                <div class="items1" style="width:70%"> <h2><Strong>Courses:</Strong> </h2>
+                <div class="items1 dark-item" style="width:70%"> <h2><Strong>Courses:</Strong> </h2>
                   <ul style="font-size : 24px ; ">
                 <li>CSI Track 50hr - Engineers Association Certificate <br><br>
                 <li>BIM Track 50hr - Engineers Association Certificate <br><br>
@@ -92,7 +97,7 @@
                 <li>Electricity for Civil Installations - SALESIAN Institute "Don Bosco" Certificate <br><br>
               </ul>
                 </div>
-                <div class="items1" style="width : 20%"> <h2><strong>Personal Skills:</strong></h2>
+                <div class="items1 dark-item" style="width : 20%"> <h2><strong>Personal Skills:</strong></h2>
                   <h3>Engineering Apps</h3>
                   <ul>
                     <li> Autocad Experience
@@ -112,14 +117,14 @@
                   <li> Problem Solving
                   <li> Lead a team </ul>
                   </div>
-                  <div class="items1" style=" width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>Contact</Strong></button> </h2> </div>
+                  <div class="items1 dark-item" style=" width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>Contact</Strong></button> </h2> </div>
                   <div id="contact"></div>
                 </div>
-                <div class="items1" style="width : 45.5%"> <h2><Strong>Military status:</Strong> </h2>
+                <div class="items1 dark-item" style="width : 45.5%"> <h2><Strong>Military status:</Strong> </h2>
                   <P>Exemption<br>
                   </p>
                 </div>
-                  <div class="items1" style="width : 45.5%"> <h2><Strong>Languages:</Strong> </h2>
+                  <div class="items1 dark-item" style="width : 45.5%"> <h2><Strong>Languages:</Strong> </h2>
                     <ul>
                       <li> Arabic (Mother Tongue)
                       <li> English (Almost Fluent)
@@ -129,6 +134,8 @@
               </div>
             <br></div>
         <div class="footer">This page Copyrights &copy; Eng.Micheal Fawzy</div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/JavaScript.js"></script>
     </body>
 </html>

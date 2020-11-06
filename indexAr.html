@@ -2,13 +2,14 @@
 <html lang=ar>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/styleAr.css">
+        <link rel="stylesheet" href="css/bubble.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styleAr.css">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <title>م. ميشيل فوزى</title>
         </head>
-    <body>
-        <div class="header">
+    <body class="dark-mode">
+        <div id="header" class="header dark-header">
             <div class="half1">
                 <h1 class="hmike"> م. ميشيل فوزى</h1>
             </div>
@@ -19,7 +20,7 @@
                 <input type="password" placeholder=" Password"> -->
             </div>
         </div>
-        <div class="nav">
+        <div id="nav" class="nav dark-nav">
             <a class="header1" href="https://micheal-fawzy.github.io/Cv/" >English</a>
            <!-- <a class="header1" href="https://www.youtube.com" target="_blank">YouTube</a> -->
             <a class="header1" href="#contact" >اتصل بي</a>
@@ -32,14 +33,17 @@
                 <h2>مهندس مدني</h2>
                 <h3>جامعة حلوان - هندسة المطرية</h3>
                 <h3> بكالوريوس هندسة مدنية 2019</h3>
+                <div class="cont3n newbu">
+                <label><input id="bubble" class="bubble" type="checkbox" name="dummy" value="off" onchange="DarkMode1()"></label>
+              </div>
               </div>
             </div>
-            <div class="items"> <h2><Strong>نظرة عامة:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>نظرة عامة:</Strong> </h2>
               <P>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; مهندس مدني متخصص يمكنه تحقيق أهداف الشركة بتشغيل عالي الأداء ، من خلال أساليب هندسية فعالة. يمكنني العمل تحت الضغط ، تلبية متطلبات المواعيد النهائية ،الإشراف  علي العمال و متعاون خلال العمل في فريق.
                </p>
             </div><br>
-            <div class="items"> <h2><Strong>خبرات العمل:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>خبرات العمل:</Strong> </h2>
                   <h3><strong>شركة ماريا ارك جروب للإنشاءات</strong></h3>
                   <P>منذ التخرج 7/2019 إلى 3/2020 <br>
                       مهندس انشاءات موقع <br>
@@ -61,7 +65,7 @@
                   <br><div id="gallery_viewer1"></div><br>
                 </div>
               </div>
-              <div class="items"> <h2><Strong>مشروع التخرج:</Strong> </h2>
+            <div class="items dark-item"> <h2><Strong>مشروع التخرج:</Strong> </h2>
                 <P>
               مشروع هيدرولوجي : بمحافظة سيناء "نويبع"<br>
               التقدير: امتياز<br>
@@ -79,10 +83,8 @@
                   <br><div id="gallery_viewer2"></div><br>
                 </div>
               </div>
-
-
-              <div id="cont3">
-                <div class="items1" style="width:70%"> <h2><Strong>الدورات:</Strong> </h2>
+            <div id="cont3">
+                <div class="items dark-item" style="width:70%"> <h2><Strong>الدورات:</Strong> </h2>
                   <ul style="font-size : 24px ; ">
                 <li>مسار (CSI) - شهادة من نقابة المهندسين - 50 ساعة. <br>
 "ETAPS - SAFE - SAP2000 - CSI Column"<br><br>
@@ -94,7 +96,7 @@
                 <li>دورة المقاولون العرب التدريبية. <br><br>
               </ul>
                 </div>
-                <div class="items1" style="width : 20%"> <h2><strong>مهارات احترافية:</strong></h2>
+                <div class="items dark-item" style="width : 20%"> <h2><strong>مهارات احترافية:</strong></h2>
                   <h3>البرامج الهندسية:</h3>
                   <ul>
                     <li> Autocad
@@ -114,23 +116,23 @@
                   <li> حل المشاكل
                   <li> قيادة الفريق</ul>
                   </div>
-                  <div class="items1" ; style="items-align : Center; width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>اتصل بي</Strong></button> </h2> </div>
+                <div class="items dark-item" ; style="items-align : Center; width: 94%;"><div class="buttonCont"><h2><button class="button" onclick="contact()"><Strong>اتصل بي</Strong></button> </h2> </div>
                   <div id="contact"></div>
                 </div>
-                <div class="items1" style="width : 45.5%"> <h2><Strong>الحالة العسكرية:</Strong> </h2>
+                <div class="items dark-item" style="width : 45.5%"> <h2><Strong>الحالة العسكرية:</Strong> </h2>
                   <P>إعفاء<br>
                   </p>
                 </div>
-                  <div class="items1" style="width : 45.5%"> <h2><Strong>اللغات:</Strong> </h2>
+                <div class="items dark-item" style="width : 45.5%"> <h2><Strong>اللغات:</Strong> </h2>
                     <ul>
                       <li> اللغة العربية (اللغة الأم)
                       <li> اللغة الإنجليزية (تقريبا بطلاقة)
                     </ul><br></div>
-
-
-              </div>
-                <br>
+            </div>
+            <br>
         <div class="footer">حقوق النشر لهذه الصفحة  &copy; م. ميشيل فوزي</div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/JavaScriptAr.js"></script>
 
     </body>
