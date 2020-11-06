@@ -178,6 +178,5 @@ p{
     background: linear-gradient(90deg, #5a3d5c , #382039, #5a3d5c);
 }
 .newbu {
-    position: absolute;
-    right: 10px;
-}
+position: absolute;
+right: 50px;}
